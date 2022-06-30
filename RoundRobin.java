@@ -53,3 +53,33 @@ public class RoundRobin {
         System.out.println("Average turnaround time = " + atat);
     }
 }
+
+
+/*OUTPUT
+Enter the number of process (maximum 10) = 5
+Enter the burst time of the process
+P0 = 4
+P1 = 5
+P2 = 1
+P3 = 9
+P4 = 7
+Enter the quantum time: 2
+--------------------------------------------------------------------------------
+Process	      Burst Time	       Turnaround Time	          Waiting Time
+--------------------------------------------------------------------------------
+ 1		        4				        11			             7
+
+ 2		        5				        18			             13
+
+ 3		        1				        5			             4
+
+ 4		        9				        26			             17
+
+ 5		        7				        25			             18
+
+Average waiting Time = 11.8
+
+Average turnaround time = 17.0
+
+*/
+
