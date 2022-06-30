@@ -46,3 +46,23 @@ public class BestFit {
         bestFit(blockSize, n, processSize, m);
     }
 }
+
+/*OUTPUT
+Enter block size: 
+5
+Enter process size: 
+4
+Enter blocks: 
+100 500 200 300 600
+Enter processes: 
+212 417 112 426
+
+Process No.	Process Size	Block no.
+ 	1			212				4
+ 	2			417				2
+ 	3			112				3
+ 	4			426				5
+
+*/
+
+
