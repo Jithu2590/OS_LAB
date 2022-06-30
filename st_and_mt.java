@@ -25,6 +25,14 @@ public class SingleThread implements Runnable {
     }
 }
 
+/*OUTPUT
+Main thread running
+Addition of two numbers: 30
+Subtraction of two numbers: 10
+Multiplication of two numbers: 200
+*/
+
+
 
 
 public class MultiThread extends Thread {
@@ -51,3 +59,29 @@ public class MultiThread extends Thread {
         t2.start();
     }
 }
+
+
+/*OUTPUT
+
+Cut the ticket : 1
+
+Show your seat number : 1
+
+Cut the ticket : 2
+
+Show your seat number : 2
+
+Cut the ticket : 3
+
+Show your seat number : 3
+
+Cut the ticket : 4
+
+Show your seat number : 4
+
+Cut the ticket : 5
+
+Show your seat number : 5
+
+*/
+
