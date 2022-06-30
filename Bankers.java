@@ -76,3 +76,28 @@ class Bankers {
         new Bankers().isSafe();
     }
 }
+
+/*OUTPUT
+Enter no. of process and resources : 5 3
+Enter allocation matrix : 
+0 1 0
+2 0 0
+3 0 2
+2 1 1
+0 0 2
+Enter max matrix : 
+7 5 3
+3 2 2
+9 0 2
+2 2 2
+4 3 3
+Enter total resource matrix : 
+10 5 7
+Allocated process : 1
+Allocated process : 3
+Allocated process : 0
+Allocated process : 2
+Allocated process : 4
+Safely allocated.
+*/
+
