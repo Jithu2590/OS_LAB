@@ -77,3 +77,23 @@ public class SleepingBarber extends Thread {
         }
     }
 }
+
+
+/*OUTPUT
+Customer 1 just sat down.
+The barber is cutting hair
+Customer 1 is getting his hair cut
+Customer 2 just sat down.
+Customer 3 just sat down.
+The barber is cutting hair
+Customer 2 is getting his hair cut
+Customer 4 just sat down.
+Customer 5 just sat down.
+The barber is cutting hair
+Customer 3 is getting his hair cut
+The barber is cutting hair
+Customer 4 is getting his hair cut
+The barber is cutting hair
+Customer 5 is getting his hair cut
+*/
+
