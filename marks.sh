@@ -1,24 +1,38 @@
-#!/bin/bash
-echo "Enter the marks of the student"
-read marks
-if [ $marks -gt 90 ] && [ $marks -le 100 ]
+echo "Enter Marks of first subject "
+read s1
+echo "Enter Marks of second subject "
+read s2
+echo "Enter Marks of third subject " 
+read s3
+sum=$((s1+s2+s3))
+avg=$((sum/3))
+echo "Sum of Three Subjects : $sum"
+echo "Average of Three Subjects : $avg"
+if [ $avg -ge 90 ]
 then
-        echo "Grade A"
-elif [ $marks -gt 80 ] && [ $marks -le 90 ]
+	grade='A'
+elif [ $avg -ge 80 ]
+then 
+	grade='B'
+elif [ $avg -ge 70 ]
 then
-        echo "Grade B"
-elif [ $marks -gt 70 ] && [ $marks -le 80 ]
+	grade='C'
+elif [ $avg -ge 60 ]
 then
-        echo "Grade C"
-elif [ $marks -gt 60 ] && [ $marks -le 70 ]
-then
-        echo "Grade D"
-elif [ $marks -gt 50 ] && [ $marks -le 60 ]
-then
-        echo "Grade E"
-elif [ $marks -gt 40 ] && [ $marks -le 50 ]
-then
-        echo "Grade F"
+	grade='D'
 else
-        echo "FAIL"
-fi 
+	grade='E'
+fi
+echo "Grade : $grade"
+
+Ouput:
+Enter Marks of first subject 
+80
+Enter Marks of second subject 
+90
+Enter Marks of third subject 
+70
+Sum of Three Subjects : 240
+Average of Three Subjects : 80
+Grade : B
+
